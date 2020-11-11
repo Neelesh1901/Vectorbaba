@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+}
+.land
+{
+ height: 100vh;
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(4340688.jpg);
+ background-position: center ;
+ background-size: cover;
+ overflow-x: hidden;
+ position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 20px 120px;
+   
+} 
+.nav-logo img
+{
+     width: 70px;
+     height: 60px;
+}
+.nav-links
+{
+    flex: 1;
+    float: right;
+}
+.nav-links ul{
+    margin-left: 50px ;
+    display: inline;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    
+    
+}
+.nav-links ul a{
+    color: aliceblue;
+    text-decoration-style:solid;
+    font-size: 13px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(226, 127, 114);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.btn{
+    padding: 10px 30px;
+    border: 0;
+    background: rgb(226, 119, 119);
+    font-weight: bold;
+    cursor: pointer;
+    color: blanchedalmond;
+}
+
+.nav-links .btn{
+    float: right;
+    border: 1px solid  oldlace;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: ;
+  }
+  
+  a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.landing-page{
+    color: white;
+    padding: 150px;
+    font-size: 44px;
+}
+
+
+.landing-page b{
+    color: tomato;
+
+}
+.Vertical-Bar{
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+
+.social-links{
+    height: 35%;
+    width: 80px;
+    background: rgb(218, 122, 105);
+    text-align: center;
+    padding-top:27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-links .fa{
+    margin: 15px 23px;
+    display: block;
+    padding :10px;
+    border: 1px solid #000;
+    border-radius: 60%;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .Vertical-Bar{
+        display: none;
+    }
+}
